@@ -1,0 +1,131 @@
+{
+    "restaurant": {
+        "id": 1,
+        "name": "La Terraza",
+        "timezone": "America/Santo_Domingo",
+        "openingTime": "12:00",
+        "closingTime": "23:00",
+        "maxPartySize": 8
+    },
+    "availability": [
+        {
+            "date": "2026-10-29",
+            "slots": [
+                {
+                    "id": "S001",
+                    "time": "12:00",
+                    "durationMinutes": 90,
+                    "capacity": 4,
+                    "availableTables": 3,
+                    "status": "available"
+                },
+                {
+                    "id": "S002",
+                    "time": "13:30",
+                    "durationMinutes": 90,
+                    "capacity": 2,
+                    "availableTables": 2,
+                    "status": "available"
+                },
+                {
+                    "id": "S003",
+                    "time": "18:00",
+                    "durationMinutes": 120,
+                    "capacity": 6,
+                    "availableTables": 1,
+                    "status": "available"
+                },
+                {
+                    "id": "S004",
+                    "time": "19:30",
+                    "durationMinutes": 120,
+                    "capacity": 4,
+                    "availableTables": 0,
+                    "status": "fully_booked"
+                },
+                {
+                    "id": "S005",
+                    "time": "21:00",
+                    "durationMinutes": 90,
+                    "capacity": 8,
+                    "availableTables": 1,
+                    "status": "available"
+                }
+            ]
+        },
+        {
+            "date": "2026-10-29",
+            "slots": [
+                {
+                    "id": "S006",
+                    "time": "12:00",
+                    "durationMinutes": 90,
+                    "capacity": 4,
+                    "availableTables": 4,
+                    "status": "available"
+                },
+                {
+                    "id": "S007",
+                    "time": "14:00",
+                    "durationMinutes": 90,
+                    "capacity": 2,
+                    "availableTables": 0,
+                    "status": "fully_booked"
+                },
+                {
+                    "id": "S008",
+                    "time": "18:30",
+                    "durationMinutes": 120,
+                    "capacity": 6,
+                    "availableTables": 2,
+                    "status": "available"
+                },
+                {
+                    "id": "S009",
+                    "time": "20:00",
+                    "durationMinutes": 120,
+                    "capacity": 4,
+                    "availableTables": 1,
+                    "status": "available"
+                }
+            ]
+        },
+        {
+            "date": "2026-10-30",
+            "slots": [
+                {
+                    "id": "S010",
+                    "time": "12:30",
+                    "durationMinutes": 90,
+                    "capacity": 2,
+                    "availableTables": 3,
+                    "status": "available"
+                },
+                {
+                    "id": "S011",
+                    "time": "18:00",
+                    "durationMinutes": 120,
+                    "capacity": 4,
+                    "availableTables": 2,
+                    "status": "available"
+                },
+                {
+                    "id": "S012",
+                    "time": "19:30",
+                    "durationMinutes": 120,
+                    "capacity": 6,
+                    "availableTables": 0,
+                    "status": "fully_booked"
+                },
+                {
+                    "id": "S013",
+                    "time": "21:00",
+                    "durationMinutes": 90,
+                    "capacity": 8,
+                    "availableTables": 2,
+                    "status": "available"
+                }
+            ]
+        }
+    ]
+}

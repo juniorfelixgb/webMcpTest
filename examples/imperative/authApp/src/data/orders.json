@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1001,
+        "description": "Compra de equipos de oficina",
+        "status": "pending",
+        "items": [
+            {
+                "productId": 101,
+                "name": "Monitor Dell 27 pulgadas",
+                "quantity": 2,
+                "price": 250
+            },
+            {
+                "productId": 102,
+                "name": "Teclado Logitech MX Keys",
+                "quantity": 1,
+                "price": 120
+            }
+        ],
+        "userId": 1
+    },
+    {
+        "id": 1002,
+        "description": "Accesorios para desarrollo",
+        "status": "completed",
+        "items": [
+            {
+                "productId": 103,
+                "name": "Mouse Logitech MX Master 3S",
+                "quantity": 1,
+                "price": 100
+            }
+        ],
+        "userId": 2
+    },
+    {
+        "id": 1003,
+        "description": "Compra de laptops",
+        "status": "processing",
+        "items": [
+            {
+                "productId": 104,
+                "name": "ASUS TUF A16",
+                "quantity": 2,
+                "price": 1450
+            }
+        ],
+        "userId": 1
+    },
+    {
+        "id": 1004,
+        "description": "Equipamiento de red",
+        "status": "pending",
+        "items": [
+            {
+                "productId": 105,
+                "name": "Router TP-Link",
+                "quantity": 3,
+                "price": 85
+            }
+        ],
+        "userId": 3
+    },
+    {
+        "id": 1005,
+        "description": "Compra de almacenamiento",
+        "status": "completed",
+        "items": [
+            {
+                "productId": 106,
+                "name": "SSD Samsung 990 Pro 2TB",
+                "quantity": 2,
+                "price": 180
+            }
+        ],
+        "userId": 2
+    },
+    {
+        "id": 1006,
+        "description": "Accesorios USB-C",
+        "status": "cancelled",
+        "items": [
+            {
+                "productId": 107,
+                "name": "Hub USB-C UGREEN",
+                "quantity": 1,
+                "price": 65
+            }
+        ],
+        "userId": 4
+    },
+    {
+        "id": 1007,
+        "description": "Equipos para HomeLab",
+        "status": "processing",
+        "items": [
+            {
+                "productId": 108,
+                "name": "Mac Mini M4",
+                "quantity": 1,
+                "price": 599
+            }
+        ],
+        "userId": 1
+    },
+    {
+        "id": 1008,
+        "description": "Compra de mobiliario",
+        "status": "pending",
+        "items": [
+            {
+                "productId": 109,
+                "name": "Silla ergonómica",
+                "quantity": 2,
+                "price": 450
+            }
+        ],
+        "userId": 3
+    },
+    {
+        "id": 1009,
+        "description": "Compra de periféricos",
+        "status": "completed",
+        "items": [
+            {
+                "productId": 110,
+                "name": "Webcam Logitech Brio",
+                "quantity": 1,
+                "price": 150
+            }
+        ],
+        "userId": 4
+    },
+    {
+        "id": 1010,
+        "description": "Componentes para servidores",
+        "status": "pending",
+        "items": [
+            {
+                "productId": 111,
+                "name": "Memoria RAM DDR5 32GB",
+                "quantity": 4,
+                "price": 110
+            }
+        ],
+        "userId": 2
+    }
+]

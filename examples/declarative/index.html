@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Declarative WebMCP</h1>
+    <h2>Search with WebMCP tool using toolname, tooldescription and toolparamtitle, toolparamdescription</h2>
+    <form toolname="search_products"
+        tooldescription="Search the product catalog by keyword and optional category filter" action="/search"
+        method="GET">
+
+        <label for="query">Search term</label>
+        <input type="text" name="query" id="query" required
+            toolparamdescription="The keyword or phrase to search for in product titles and descriptions">
+
+        <label for="category">Category</label>
+        <select name="category" id="category" toolparamtitle="Product Category"
+            toolparamdescription="Filter results to a specific product category. Use 'all' for no filter.">
+            <option value="all">All categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="books">Books</option>
+            <option value="clothing">Clothing</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <hr />
+
+    <h2>Search with WebMCP tool using respondWith</h2>
+    <form toolname="search_products_usingRespondWith" tooldescription="Search the product catalog" toolautosubmit
+        action="/search">
+        <input type="text" name="query" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const query = new FormData(e.target).get("query");
+
+            if (!query || query.trim().length === 0) {
+                if (e.agentInvoked) {
+                    e.respondWith(Promise.resolve({
+                        error: "Search query cannot be empty. Please provide a keyword."
+                    }));
+                }
+                return;
+            }
+
+            const results = performSearch(query);
+
+            if (e.agentInvoked) {
+                e.respondWith(Promise.resolve({
+                    content: [{ type: "text", text: JSON.stringify(results) }]
+                }));
+            }
+        });
+    </script>
+</body>
+
+</html>
